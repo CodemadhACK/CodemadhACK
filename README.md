@@ -54,3 +54,20 @@
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=gowtu47&" alt="gowtu47" /></p>
 
 
+Given: Department Executable is deployed in GRS lower lane
+And: Python version is upgraded to 3.11 with no logic changes
+And: Required database credentials and environment variables are configured correctly
+
+When: Frontend admin job triggers the executable
+
+Then:
+1. Retagging process should start successfully and establish database connectivity without timeout or Python version-related errors.
+2. The process should correctly poll and fetch trade and rule data from the respective TABLESPACE without schema mismatches or datatype conversion issues.
+3. All rules that were functioning in production under the previous Python version should work without failures, exceptions, or altered logic.
+4. Effective date within rules should be accurately stamped with the current date-time, consistent with production behavior.
+5. Time taken for execution in the lower lane should be comparable to production execution time, without unexpected delays.
+6. A second execution trigger should not initiate another instance if the current instance is still in running status, ensuring proper lock or concurrency prevention.
+7. Unicode or special character values within the data should be processed and logged correctly without encoding or formatting errors.
+8. All logs should retain the same structure, severity levels, and tags as before, ensuring no change in log readers or downstream monitoring tools.
+9. If any rule or query failure occurs, appropriate exception handling should be triggered and logged, and the process should either retry or exit gracefully.
+10. Process exit status should reflect success or failure appropriately and align with higher-level job monitoring expectations.
