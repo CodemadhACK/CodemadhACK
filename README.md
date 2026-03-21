@@ -13,7 +13,7 @@
 ![](https://img.shields.io/badge/NSE%2FBSE-ACTIVE_TRADER-FF6B35?style=flat-square&labelColor=0D1117)
 ![](https://img.shields.io/badge/STRATEGY-Options_%7C_Swing-9B59B6?style=flat-square&labelColor=0D1117)
 ![](https://img.shields.io/badge/STATUS-Market_Open-FFD700?style=flat-square&labelColor=0D1117)
-![Profile Views](https://komarev.com/ghpvc/?username=gowtu47&style=flat-square&color=00FFB3&label=PROFILE+VIEWS)
+![Profile Views](https://komarev.com/ghpvc/?username=CodemadhACK&style=flat-square&color=00FFB3&label=PROFILE+VIEWS)
 
 </div>
 
@@ -201,7 +201,7 @@ Python Scripts
 
 ## ⚙️ GitHub Actions — YAML Workflows
 
-> All automation running on this profile is powered by GitHub Actions. Drop these into `.github/workflows/` in your `gowtu47` repo.
+> All automation running on this profile is powered by GitHub Actions. Drop these into `.github/workflows/` in your `CodemadhACK` repo.
 
 <details>
 <summary><b>🐍 Snake Contribution Animation</b> — Click to expand YAML</summary>
