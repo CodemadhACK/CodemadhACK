@@ -437,20 +437,20 @@ jobs:
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=gowtu47&custom_title=Gowtham's%20Contribution%20Graph&bg_color=0D1117&color=00FFB3&line=00FFB3&point=FFFFFF&area_color=00FFB3&area=true&hide_border=true" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=CodemadhACK&custom_title=Gowtham's%20Contribution%20Graph&bg_color=0D1117&color=00FFB3&line=00FFB3&point=FFFFFF&area_color=00FFB3&area=true&hide_border=true" width="100%"/>
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=gowtu47&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFB3&icon_color=00FFB3&text_color=ffffff&rank_icon=github" width="49%"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=gowtu47&theme=tokyonight&hide_border=true&background=0D1117&stroke=00FFB3&ring=00FFB3&fire=FF6B6B&currStreakLabel=00FFB3" width="49%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=CodemadhACK&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFB3&icon_color=00FFB3&text_color=ffffff&rank_icon=github" width="49%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=CodemadhACK&theme=tokyonight&hide_border=true&background=0D1117&stroke=00FFB3&ring=00FFB3&fire=FF6B6B&currStreakLabel=00FFB3" width="49%"/>
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gowtu47&layout=donut&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFB3&text_color=ffffff" width="36%"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=CodemadhACK&layout=donut&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFB3&text_color=ffffff" width="36%"/>
 
 <br/>
 
-<img src="https://github-profile-trophy.vercel.app/?username=gowtu47&theme=algolia&no-frame=true&no-bg=true&row=1&column=7" width="100%"/>
+<img src="https://github-profile-trophy.vercel.app/?username=CodemadhACK&theme=algolia&no-frame=true&no-bg=true&row=1&column=7" width="100%"/>
 
 </div>
 
