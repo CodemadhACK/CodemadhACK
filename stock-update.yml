@@ -1,0 +1,62 @@
+name: Update Stock Watchlist
+on:
+  schedule:
+    - cron: "45 3 * * 1-5"
+    - cron: "0 10 * * 1-5"
+  workflow_dispatch:
+jobs:
+  update-stocks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install yfinance pandas
+      - name: Fetch & update watchlist
+        run: |
+          python3 - << 'PYEOF'
+          import yfinance as yf, re
+
+          watchlist = {
+              "NIFTY 50"   : "^NSEI",
+              "BANK NIFTY" : "^NSEBANK",
+              "RELIANCE"   : "RELIANCE.NS",
+              "TCS"        : "TCS.NS",
+              "INFY"       : "INFY.NS",
+              "HDFCBANK"   : "HDFCBANK.NS",
+          }
+          rows = ["| SYMBOL | PRICE | CHANGE | STATUS |",
+                  "|:---|---:|---:|:---:|"]
+          for name, sym in watchlist.items():
+              t = yf.Ticker(sym)
+              h = t.history(period="2d")
+              if len(h) >= 2:
+                  price = h["Close"].iloc[-1]
+                  prev  = h["Close"].iloc[-2]
+                  chg   = ((price - prev) / prev) * 100
+                  status = "🟢 ▲" if chg >= 0 else "🔴 ▼"
+                  rows.append(f"| **{name}** | ₹{price:,.2f} | {chg:+.2f}% | {status} |")
+          table = "\n".join(rows)
+          with open("README.md", "r") as f:
+              content = f.read()
+          new = re.sub(
+              r"(<!-- STOCK-TABLE:START -->).*?(<!-- STOCK-TABLE:END -->)",
+              f"<!-- STOCK-TABLE:START -->\n{table}\n<!-- STOCK-TABLE:END -->",
+              content, flags=re.DOTALL
+          )
+          with open("README.md", "w") as f:
+              f.write(new)
+          print("Done!")
+          PYEOF
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: update stock watchlist [$(date +%Y-%m-%d)]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
