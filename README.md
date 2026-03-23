@@ -260,8 +260,26 @@ jobs:
               content = f.read()
 
           new_content = re.sub(
-              r"(<!-- STOCK-TABLE:START -->).*?(<!-- STOCK-TABLE:END -->)",
-              f"<!-- STOCK-TABLE:START -->\n{table}\n<!-- STOCK-TABLE:END -->",
+              r"(<!-- STOCK-TABLE:START -->
+| SYMBOL | PRICE | CHANGE | STATUS |
+|:---|---:|---:|:---:|
+| **NIFTY 50** | ₹22,524.70 | -2.55% | 🔴 ▼ |
+| **BANK NIFTY** | ₹51,666.60 | -3.30% | 🔴 ▼ |
+| **RELIANCE** | ₹1,394.40 | -1.41% | 🔴 ▼ |
+| **TCS** | ₹2,399.40 | +0.37% | 🟢 ▲ |
+| **INFY** | ₹1,252.60 | -0.26% | 🔴 ▼ |
+| **HDFCBANK** | ₹752.65 | -3.56% | 🔴 ▼ |
+<!-- STOCK-TABLE:END -->)",
+              f"<!-- STOCK-TABLE:START -->
+| SYMBOL | PRICE | CHANGE | STATUS |
+|:---|---:|---:|:---:|
+| **NIFTY 50** | ₹22,524.70 | -2.55% | 🔴 ▼ |
+| **BANK NIFTY** | ₹51,666.60 | -3.30% | 🔴 ▼ |
+| **RELIANCE** | ₹1,394.40 | -1.41% | 🔴 ▼ |
+| **TCS** | ₹2,399.40 | +0.37% | 🟢 ▲ |
+| **INFY** | ₹1,252.60 | -0.26% | 🔴 ▼ |
+| **HDFCBANK** | ₹752.65 | -3.56% | 🔴 ▼ |
+<!-- STOCK-TABLE:END -->",
               content, flags=re.DOTALL
           )
 
@@ -284,7 +302,15 @@ jobs:
 > Add these markers in your README where you want the live table:
 > ```
 > <!-- STOCK-TABLE:START -->
-> <!-- STOCK-TABLE:END -->
+| SYMBOL | PRICE | CHANGE | STATUS |
+|:---|---:|---:|:---:|
+| **NIFTY 50** | ₹22,524.70 | -2.55% | 🔴 ▼ |
+| **BANK NIFTY** | ₹51,666.60 | -3.30% | 🔴 ▼ |
+| **RELIANCE** | ₹1,394.40 | -1.41% | 🔴 ▼ |
+| **TCS** | ₹2,399.40 | +0.37% | 🟢 ▲ |
+| **INFY** | ₹1,252.60 | -0.26% | 🔴 ▼ |
+| **HDFCBANK** | ₹752.65 | -3.56% | 🔴 ▼ |
+<!-- STOCK-TABLE:END -->
 > ```
 
 </details>
@@ -331,12 +357,12 @@ jobs:
 <!-- STOCK-TABLE:START -->
 | SYMBOL | PRICE | CHANGE | STATUS |
 |:---|---:|---:|:---:|
-| **NIFTY 50** | ₹22,529.05 | +0.72% | 🟢 ▲ |
-| **BANK NIFTY** | ₹48,321.80 | +0.45% | 🟢 ▲ |
-| **RELIANCE** | ₹2,847.60 | +0.31% | 🟢 ▲ |
-| **TCS** | ₹4,112.35 | -0.18% | 🔴 ▼ |
-| **INFY** | ₹1,563.70 | -0.52% | 🔴 ▼ |
-| **HDFCBANK** | ₹1,678.90 | +0.24% | 🟢 ▲ |
+| **NIFTY 50** | ₹22,524.70 | -2.55% | 🔴 ▼ |
+| **BANK NIFTY** | ₹51,666.60 | -3.30% | 🔴 ▼ |
+| **RELIANCE** | ₹1,394.40 | -1.41% | 🔴 ▼ |
+| **TCS** | ₹2,399.40 | +0.37% | 🟢 ▲ |
+| **INFY** | ₹1,252.60 | -0.26% | 🔴 ▼ |
+| **HDFCBANK** | ₹752.65 | -3.56% | 🔴 ▼ |
 <!-- STOCK-TABLE:END -->
 
 ---
