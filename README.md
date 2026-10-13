@@ -263,18 +263,14 @@ jobs:
               r"(<!-- STOCK-TABLE:START -->
 | SYMBOL | PRICE | CHANGE | STATUS |
 |:---|---:|---:|:---:|
-| **RELIANCE** | ₹nan | +nan% | 🔴 ▼ |
-| **TCS** | ₹nan | +nan% | 🔴 ▼ |
-| **INFY** | ₹nan | +nan% | 🔴 ▼ |
-| **HDFCBANK** | ₹nan | +nan% | 🔴 ▼ |
+| **NIFTY 50** | ₹22,721.95 | +1.60% | 🟢 ▲ |
+| **BANK NIFTY** | ₹55,481.05 | +1.03% | 🟢 ▲ |
 <!-- STOCK-TABLE:END -->)",
               f"<!-- STOCK-TABLE:START -->
 | SYMBOL | PRICE | CHANGE | STATUS |
 |:---|---:|---:|:---:|
-| **RELIANCE** | ₹nan | +nan% | 🔴 ▼ |
-| **TCS** | ₹nan | +nan% | 🔴 ▼ |
-| **INFY** | ₹nan | +nan% | 🔴 ▼ |
-| **HDFCBANK** | ₹nan | +nan% | 🔴 ▼ |
+| **NIFTY 50** | ₹22,721.95 | +1.60% | 🟢 ▲ |
+| **BANK NIFTY** | ₹55,481.05 | +1.03% | 🟢 ▲ |
 <!-- STOCK-TABLE:END -->",
               content, flags=re.DOTALL
           )
@@ -300,10 +296,8 @@ jobs:
 > <!-- STOCK-TABLE:START -->
 | SYMBOL | PRICE | CHANGE | STATUS |
 |:---|---:|---:|:---:|
-| **RELIANCE** | ₹nan | +nan% | 🔴 ▼ |
-| **TCS** | ₹nan | +nan% | 🔴 ▼ |
-| **INFY** | ₹nan | +nan% | 🔴 ▼ |
-| **HDFCBANK** | ₹nan | +nan% | 🔴 ▼ |
+| **NIFTY 50** | ₹22,721.95 | +1.60% | 🟢 ▲ |
+| **BANK NIFTY** | ₹55,481.05 | +1.03% | 🟢 ▲ |
 <!-- STOCK-TABLE:END -->
 > ```
 
@@ -351,10 +345,8 @@ jobs:
 <!-- STOCK-TABLE:START -->
 | SYMBOL | PRICE | CHANGE | STATUS |
 |:---|---:|---:|:---:|
-| **RELIANCE** | ₹nan | +nan% | 🔴 ▼ |
-| **TCS** | ₹nan | +nan% | 🔴 ▼ |
-| **INFY** | ₹nan | +nan% | 🔴 ▼ |
-| **HDFCBANK** | ₹nan | +nan% | 🔴 ▼ |
+| **NIFTY 50** | ₹22,721.95 | +1.60% | 🟢 ▲ |
+| **BANK NIFTY** | ₹55,481.05 | +1.03% | 🟢 ▲ |
 <!-- STOCK-TABLE:END -->
 
 ---
