@@ -263,22 +263,18 @@ jobs:
               r"(<!-- STOCK-TABLE:START -->
 | SYMBOL | PRICE | CHANGE | STATUS |
 |:---|---:|---:|:---:|
-| **NIFTY 50** | ₹25,514.30 | +1.14% | 🟢 ▲ |
-| **BANK NIFTY** | ₹63,063.00 | +1.65% | 🟢 ▲ |
-| **RELIANCE** | ₹1,375.60 | +0.92% | 🟢 ▲ |
-| **TCS** | ₹2,342.70 | -1.55% | 🔴 ▼ |
-| **INFY** | ₹1,091.90 | -1.52% | 🔴 ▼ |
-| **HDFCBANK** | ₹821.80 | +1.69% | 🟢 ▲ |
+| **RELIANCE** | ₹nan | +nan% | 🔴 ▼ |
+| **TCS** | ₹nan | +nan% | 🔴 ▼ |
+| **INFY** | ₹nan | +nan% | 🔴 ▼ |
+| **HDFCBANK** | ₹nan | +nan% | 🔴 ▼ |
 <!-- STOCK-TABLE:END -->)",
               f"<!-- STOCK-TABLE:START -->
 | SYMBOL | PRICE | CHANGE | STATUS |
 |:---|---:|---:|:---:|
-| **NIFTY 50** | ₹25,514.30 | +1.14% | 🟢 ▲ |
-| **BANK NIFTY** | ₹63,063.00 | +1.65% | 🟢 ▲ |
-| **RELIANCE** | ₹1,375.60 | +0.92% | 🟢 ▲ |
-| **TCS** | ₹2,342.70 | -1.55% | 🔴 ▼ |
-| **INFY** | ₹1,091.90 | -1.52% | 🔴 ▼ |
-| **HDFCBANK** | ₹821.80 | +1.69% | 🟢 ▲ |
+| **RELIANCE** | ₹nan | +nan% | 🔴 ▼ |
+| **TCS** | ₹nan | +nan% | 🔴 ▼ |
+| **INFY** | ₹nan | +nan% | 🔴 ▼ |
+| **HDFCBANK** | ₹nan | +nan% | 🔴 ▼ |
 <!-- STOCK-TABLE:END -->",
               content, flags=re.DOTALL
           )
@@ -304,12 +300,10 @@ jobs:
 > <!-- STOCK-TABLE:START -->
 | SYMBOL | PRICE | CHANGE | STATUS |
 |:---|---:|---:|:---:|
-| **NIFTY 50** | ₹25,514.30 | +1.14% | 🟢 ▲ |
-| **BANK NIFTY** | ₹63,063.00 | +1.65% | 🟢 ▲ |
-| **RELIANCE** | ₹1,375.60 | +0.92% | 🟢 ▲ |
-| **TCS** | ₹2,342.70 | -1.55% | 🔴 ▼ |
-| **INFY** | ₹1,091.90 | -1.52% | 🔴 ▼ |
-| **HDFCBANK** | ₹821.80 | +1.69% | 🟢 ▲ |
+| **RELIANCE** | ₹nan | +nan% | 🔴 ▼ |
+| **TCS** | ₹nan | +nan% | 🔴 ▼ |
+| **INFY** | ₹nan | +nan% | 🔴 ▼ |
+| **HDFCBANK** | ₹nan | +nan% | 🔴 ▼ |
 <!-- STOCK-TABLE:END -->
 > ```
 
@@ -357,12 +351,10 @@ jobs:
 <!-- STOCK-TABLE:START -->
 | SYMBOL | PRICE | CHANGE | STATUS |
 |:---|---:|---:|:---:|
-| **NIFTY 50** | ₹25,514.30 | +1.14% | 🟢 ▲ |
-| **BANK NIFTY** | ₹63,063.00 | +1.65% | 🟢 ▲ |
-| **RELIANCE** | ₹1,375.60 | +0.92% | 🟢 ▲ |
-| **TCS** | ₹2,342.70 | -1.55% | 🔴 ▼ |
-| **INFY** | ₹1,091.90 | -1.52% | 🔴 ▼ |
-| **HDFCBANK** | ₹821.80 | +1.69% | 🟢 ▲ |
+| **RELIANCE** | ₹nan | +nan% | 🔴 ▼ |
+| **TCS** | ₹nan | +nan% | 🔴 ▼ |
+| **INFY** | ₹nan | +nan% | 🔴 ▼ |
+| **HDFCBANK** | ₹nan | +nan% | 🔴 ▼ |
 <!-- STOCK-TABLE:END -->
 
 ---
